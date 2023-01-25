@@ -1,0 +1,16 @@
+.input {
+    margin: 5px 0;
+    padding: .8em;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--light);
+}
+
+.input::placeholder {
+    color: var(--grey);
+}
+
+.input:active,
+.input:focus {
+    border: 2px solid var(--pink);
+}

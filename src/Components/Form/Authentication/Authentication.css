@@ -1,0 +1,12 @@
+.btn__social__media {
+    gap: .5em;
+    border-radius: 8px;
+    padding: .8em 1.5em;
+
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border: 1px solid var(--light);
+}

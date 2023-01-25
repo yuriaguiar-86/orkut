@@ -1,0 +1,9 @@
+.input__submit {
+    padding: .8em;
+    margin-top: 5px;
+
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+    background: var(--pink);
+}

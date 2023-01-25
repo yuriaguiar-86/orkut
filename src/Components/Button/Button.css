@@ -1,0 +1,11 @@
+.btn__download {
+    gap: .5em;
+    border-radius: 8px;
+    padding: .8em 1.5em;
+
+    border: none;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    background: var(--white);
+}

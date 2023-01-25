@@ -1,0 +1,18 @@
+.container__main {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__wrapper {
+    gap: 1em;
+    padding: .8em;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: row;
+    background: var(--white);
+}
