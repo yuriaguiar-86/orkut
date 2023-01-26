@@ -1,0 +1,27 @@
+.container__about__user {
+    gap: 1.3em;
+    width: 300px;
+    padding: 1.5em;
+    font-weight: 500;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--white);
+}
+
+.container__about__user img {
+    width: 200px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 3px solid var(--pink);
+}
+
+.container__data {
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+}

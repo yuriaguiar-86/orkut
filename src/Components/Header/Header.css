@@ -1,0 +1,37 @@
+.container__header {
+    padding: 1em 5em;
+    font-weight: 500;
+
+    gap: 2em;
+    display: flex;
+    align-items: center;
+    background: var(--white);
+    justify-content: space-between;
+}
+
+.container__header img {
+    max-width: 150px;
+}
+
+.options {
+    gap: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.input__search {
+    width: 300px;
+    padding: .8em;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--light);
+}
+
+.input__search::placeholder {
+    color: var(--grey);
+}
+
+.input__search:active,
+.input__search:focus {
+    border: 1px solid var(--pink);
+}

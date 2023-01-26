@@ -5,6 +5,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgb(117,91,126);
+    background: linear-gradient(
+        90deg, rgba(117,91,126,1) 0%, 
+        rgba(146,66,103,1) 20%, 
+        rgba(14,14,14,1) 100%);
 }
 
 .container__wrapper {

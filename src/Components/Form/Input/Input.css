@@ -12,5 +12,5 @@
 
 .input:active,
 .input:focus {
-    border: 2px solid var(--pink);
+    border: 1px solid var(--pink);
 }

@@ -1,0 +1,18 @@
+.container__message {
+    top: 1em;
+    right: 1em;
+    padding: .7em 1em;
+    border-radius: 8px;
+    border: 2px solid var(--light);
+
+    color: var(--dark);
+    position: absolute;
+    background: var(--white);
+}
+
+.container__message p {
+    gap: 10px;
+    display: flex;
+    font-size: 1.1em;
+    align-items: center;
+}

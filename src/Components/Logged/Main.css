@@ -1,0 +1,9 @@
+.container__logged {
+    display: flex;
+    align-items: flex-start;
+
+    min-height: 90vh;
+    padding: 3em 5em;
+
+    background: var(--blue);
+}

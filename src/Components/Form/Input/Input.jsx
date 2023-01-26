@@ -1,11 +1,14 @@
 import './Input.css';
 
-const Input = ({ type, placeholder, className }) => {
+const Input = ({ type, name, placeholder, onChange }) => {
     return (
         <input 
+            autoComplete='off'
+            className='input'
             type={ type } 
+            name={ name }
             placeholder={ placeholder } 
-            className={ className } 
+            onChange={ onChange }
         />
     );
 }

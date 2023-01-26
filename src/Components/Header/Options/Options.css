@@ -1,0 +1,14 @@
+.container__options ul {
+    gap: 2em;
+    display: flex;
+    list-style-type: none;
+}
+
+.container__options a {
+    color: var(--dark);
+}
+
+.container__options a:hover {
+    transition: .3s;
+    color: var(--pink);
+}
