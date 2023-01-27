@@ -1,0 +1,18 @@
+.container__comunity {
+    gap: 1em;
+    padding: 1.3em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+}
+
+.container__comunity section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__comunity section p {
+    font-weight: 500;
+    color: var(--pink);
+}

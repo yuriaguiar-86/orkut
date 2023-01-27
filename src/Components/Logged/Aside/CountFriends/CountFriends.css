@@ -1,0 +1,11 @@
+.container__count__friends {
+    padding: 1.3em;
+    border-radius: 10px;
+    display: flex;
+    background: var(--white);
+    justify-content: space-between;
+}
+
+.container__count__friends a {
+    font-weight: 500;
+}

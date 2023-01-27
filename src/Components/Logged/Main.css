@@ -1,9 +1,10 @@
 .container__logged {
-    display: flex;
-    align-items: flex-start;
-
+    gap: 2em;
     min-height: 90vh;
-    padding: 3em 5em;
+    padding: 2em 5em;
 
+    display: grid;
     background: var(--blue);
+    justify-content: space-between;
+    grid-template-columns: 1fr 2fr 1fr;
 }

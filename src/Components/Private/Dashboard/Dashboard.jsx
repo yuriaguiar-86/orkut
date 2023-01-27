@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+import './Dashboard.css';
 
 const Dashboard = () => {
     return (
-        <>
+        <section className='container__dashboard'>
             <h2>Dashboard private</h2>
-            <Link to='/profile'>Profile</Link>
-        </>
+            <p>asdasd</p>
+        </section>
     );
 }
 

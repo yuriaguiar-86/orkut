@@ -1,11 +1,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import ForgetPassword from './Components/ForgetPassword/ForgetPassword.jsx';
-import Friends from './Components/Friends/Friends.jsx';
+import Friends from './Components/Private/Friends/Friends.jsx';
 import Header from './Components/Header/Header.jsx';
 import Inductive from './Components/Inductive/Inductive.jsx';
 import Container from './Components/Layout/Container/Container.jsx';
 import AboutUser from './Components/Logged/AboutUser/AboutUser.jsx';
+import Aside from './Components/Logged/Aside/Aside.jsx';
 import Main from './Components/Logged/Main.jsx';
 import Login from './Components/Login/Login.jsx';
 import Dashboard from './Components/Private/Dashboard/Dashboard.jsx';
@@ -16,7 +17,7 @@ import useToken from './Token/UseToken.js';
 const App = () => {
   const { token, setToken } = useToken();
   
-  if(!token) {   
+  if(!token) {  
     return (
       <BrowserRouter>
         <Container>
@@ -51,6 +52,8 @@ const App = () => {
                 <Route path='/profile' element={ <Profile /> } />
                 <Route path='/friends' element={ <Friends /> } />
               </Routes>
+
+              <Aside />
             </Main>
           </BrowserRouter>
         )

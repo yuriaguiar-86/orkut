@@ -1,0 +1,14 @@
+.info__user {
+    padding: 1.3em;
+    font-weight: 500;
+    border-radius: 10px;
+    background: var(--white);
+}
+
+.info__user p {
+    color: var(--grey);
+}
+
+.info__user span {
+    color: var(--dark);
+}

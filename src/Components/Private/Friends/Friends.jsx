@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import './Friends.css';
+import InfoUser from './InfoUser/InfoUser';
 
 const Friends = () => {
-    const [users, setUsers] = useState();
+    const [users, setUsers] = useState([]);
     
     useEffect(() => {
         fetch(`http://localhost:8765/users`, {
@@ -14,11 +15,14 @@ const Friends = () => {
         .then((res) => res.json())
         .then((data) => {
             setUsers(data);
+            console.log(data);
         });
     }, []);
 
     return (
-        <h2>Friends</h2>
+        <section className='container__friends__list'>
+            <InfoUser props={ users } />
+        </section> 
     );
 }
 
