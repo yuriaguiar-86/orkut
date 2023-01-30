@@ -8,3 +8,15 @@
     justify-content: space-between;
     grid-template-columns: 1fr 2fr 1fr;
 }
+
+@media screen and (max-width: 800px) {
+    .container__logged {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container__logged {
+        grid-template-columns: 1fr;
+    }
+}

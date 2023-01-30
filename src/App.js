@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import ForgetPassword from './Components/ForgetPassword/ForgetPassword.jsx';
-import Friends from './Components/Private/Friends/Friends.jsx';
 import Header from './Components/Header/Header.jsx';
 import Inductive from './Components/Inductive/Inductive.jsx';
 import Container from './Components/Layout/Container/Container.jsx';
@@ -10,6 +9,7 @@ import Aside from './Components/Logged/Aside/Aside.jsx';
 import Main from './Components/Logged/Main.jsx';
 import Login from './Components/Login/Login.jsx';
 import Dashboard from './Components/Private/Dashboard/Dashboard.jsx';
+import Friends from './Components/Private/Friends/Friends.jsx';
 import Profile from './Components/Private/Profile/Profile.jsx';
 import Register from './Components/Register/Register.jsx';
 import useToken from './Token/UseToken.js';
@@ -42,7 +42,7 @@ const App = () => {
       {
         token && (
           <BrowserRouter>
-            <Header />
+            <Header user={ token.name } setToken={ setToken } />
             
             <Main>
               <AboutUser />
@@ -57,7 +57,7 @@ const App = () => {
             </Main>
           </BrowserRouter>
         )
-    }
+      }
     </>
   );
 }

@@ -8,6 +8,7 @@ import { MdOutlineLocalPostOffice, MdOutlineMessage } from 'react-icons/md';
 
 import photo from '../../../images/photo.jpg';
 import Actions from '../Actions/Actions';
+import Logout from '../../Header/Logout/Logout';
 
 const optionOne = [
     { name: 'Adicionar', to: '', icon: <FiUserPlus /> }, { name: 'Denunciar', to: '', icon: <BiBlock /> }

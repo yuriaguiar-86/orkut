@@ -1,27 +1,36 @@
 import './Logout.css';
 
-const Logout = () => {
-    // const history = useNavigate();
+import { FiLogOut } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom';
 
-    // const handleClickLogout = () => {
-    //     return fetch(`http://localhost:8765/users/logout`, {
-    //         method: 'POST',
-    //         headers: {
-    //             'Content-Type': 'application/json'
-    //         }
-    //     })
-    //     .then((res) => res.json())
-    //     .then((data) => {
-    //         console.log(data);
-    //         history('/', { state: { message: data }}
-    //     )});
-    // }
+const Logout = ({ setToken }) => {
+    const history = useNavigate();
+
+    const credentials = JSON.parse(localStorage.getItem('token'));
+
+    const handleClickLogout = () => {
+        return fetch(`http://localhost:8765/users/logout`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                username: credentials.username,
+                password: credentials.password
+            })
+        })
+        .then((res) => {
+            res.json()
+        })
+        .then((data) => {
+            localStorage.clear();
+            setToken('');
+            history('/', { state: { message: data }})
+        });
+    }
 
     return (
-        <div className="container__logout">
-            <p>Yuri Aguiar</p>
-            <p className='logout'>Sair</p>
-        </div>
+        <p className='logout' onClick={ handleClickLogout }>Sair <FiLogOut /></p>
     );
 }
 

@@ -13,6 +13,10 @@
     max-width: 150px;
 }
 
+.logo__mobile {
+    display: none;
+}
+
 .options {
     gap: 2em;
     display: flex;
@@ -34,4 +38,21 @@
 .input__search:active,
 .input__search:focus {
     border: 1px solid var(--pink);
+}
+
+@media screen and (max-width: 1100px) {
+    .input__search {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container__header img {
+        display: none;
+    }
+
+    .logo__mobile {
+        display: block !important;
+        max-width: 45px !important;
+    }
 }

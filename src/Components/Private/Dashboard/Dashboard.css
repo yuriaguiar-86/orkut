@@ -1,6 +1,7 @@
 .container__dashboard {
     padding: 1em;
-    max-height: 200px;
+    max-height: 250px;
+    min-width: 300px;
     border-radius: 10px;
 
     display: flex;

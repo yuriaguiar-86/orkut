@@ -45,12 +45,11 @@ const Login = ({ setToken }) => {
         sessionStorage.clear();
         e.preventDefault();
 
-        const token = await login({ 
+        const credential = await login({ 
             username, 
             password 
         });
-
-        setToken(token);
+        setToken(credential);
     }
 
     return (

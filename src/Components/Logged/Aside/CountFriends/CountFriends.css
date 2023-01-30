@@ -2,6 +2,7 @@
     padding: 1.3em;
     border-radius: 10px;
     display: flex;
+    flex-wrap: wrap;
     background: var(--white);
     justify-content: space-between;
 }

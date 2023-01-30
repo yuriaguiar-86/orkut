@@ -12,3 +12,16 @@
     transition: .3s;
     color: var(--pink);
 }
+
+.mobile {
+    display: none !important;
+}
+
+@media screen and (max-width: 750px) {
+    .desktop {
+        display: none !important;
+    }
+    .mobile {
+        display: flex !important;
+    }
+}

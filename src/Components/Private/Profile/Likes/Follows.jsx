@@ -5,12 +5,16 @@ import { BsFillEmojiLaughingFill } from 'react-icons/bs';
 import { MdStar } from 'react-icons/md';
 
 const Follows = () => {
+    const randomNumber = () => {
+        return Math.floor(Math.random() * (100 - 80 + 1) + 80);
+    }
+
     return (
         <div className='container_follows'>
-            <p>Confiante <span><MdStar /> 85%</span></p>
-            <p>Dedicado <span><AiTwotoneLike /> 100%</span></p>
-            <p>Resiliente <span><BsFillEmojiLaughingFill /> 100%</span></p>
-            <p>Comunicativo <span><AiFillMessage /> 70%</span></p>
+            <p>Confiante <span><MdStar /> { randomNumber() }%</span></p>
+            <p>Dedicado <span><AiTwotoneLike /> { randomNumber() }%</span></p>
+            <p>Resiliente <span><BsFillEmojiLaughingFill /> { randomNumber() }%</span></p>
+            <p>Comunicativo <span><AiFillMessage /> { randomNumber() }%</span></p>
         </div>
     );
 }
