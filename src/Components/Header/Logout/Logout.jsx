@@ -19,7 +19,7 @@ const Logout = () => {
 
     return (
         <div className="container__logout">
-            <p>Nome usuário</p>
+            <p>Yuri Aguiar</p>
             <p className='logout'>Sair</p>
         </div>
     );

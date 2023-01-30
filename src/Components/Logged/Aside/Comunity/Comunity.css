@@ -13,6 +13,7 @@
 }
 
 .container__comunity section p {
+    cursor: pointer;
     font-weight: 500;
     color: var(--pink);
 }

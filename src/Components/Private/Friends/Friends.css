@@ -1,5 +1,5 @@
 .container__friends__list {
-    gap: 2em;
+    gap: 1em;
     display: flex;
     flex-direction: column;
 }

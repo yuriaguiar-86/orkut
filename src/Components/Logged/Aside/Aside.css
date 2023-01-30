@@ -1,5 +1,5 @@
 .container__aside {
-    gap: 2em;
+    gap: 1em;
     display: flex;
     flex-direction: column;
 }

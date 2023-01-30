@@ -1,4 +1,15 @@
 .container__dashboard {
+    padding: 1em;
+    max-height: 200px;
+    border-radius: 10px;
+
     display: flex;
     flex-direction: column;
+    background: var(--white);
+    justify-content: space-between;
+}
+
+.container__dashboard span {
+    font-weight: 500;
+    color: var(--pink);
 }

@@ -1,5 +1,7 @@
-import { useEffect, useState } from 'react';
 import './Friends.css';
+
+import { useEffect, useState } from 'react';
+
 import InfoUser from './InfoUser/InfoUser';
 
 const Friends = () => {
